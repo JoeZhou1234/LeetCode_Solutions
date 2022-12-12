@@ -5,9 +5,8 @@ import java.util.Arrays;
 public class TwoSum {
     public static int[] twoSum(int[] nums, int target) {
         int[] output = {-1, -1};
-        int arrlen = nums.length;
-        for (int i = 0; i < arrlen - 1; i++) {
-            for (int j = i + 1; j < arrlen; j++) {
+        for (int i = 0; i < nums.length - 1; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
                 if (nums[i] + nums[j] == target) {
                     output[0] = i;
                     output[1] = j;
